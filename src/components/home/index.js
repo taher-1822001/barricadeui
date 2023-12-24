@@ -5,6 +5,7 @@ import axios from 'axios';
 import BASE_URL from '../config';
 import {toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ListData from '../listData';
 class Home extends React.Component{
     constructor(props){
         super(props);
@@ -41,8 +42,11 @@ class Home extends React.Component{
                     </div>
                     <div className='w-100'></div>
                     <hr />
-
-                    {this.state.employeeData}
+                    <div className='w-100'></div>
+                    <div className='col'>
+                        <ListData employeeData={this.state.employeeData} />
+                    </div>
+                  
                 </div>
             </div>
             <Footer />
