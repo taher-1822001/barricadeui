@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body, html{
+  background-color:darkgray;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -14,6 +17,20 @@ code {
 tr, td,th{
   padding:10px;
   border:1px solid black;
-  border-radius:4px
+  border-radius:4px;
+  background:none;
 
+}
+table{
+  background:none;
+}
+
+input{
+  background:none !important;
+}
+
+
+.card{
+  background:none;
+  color:white;
 }
